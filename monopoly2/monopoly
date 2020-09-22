@@ -1,0 +1,6968 @@
+VERSION 5.00
+Begin VB.Form Form1 
+   BorderStyle     =   1  'Fixed Single
+   Caption         =   "GEEKmoney 3.31"
+   ClientHeight    =   10530
+   ClientLeft      =   1530
+   ClientTop       =   330
+   ClientWidth     =   13545
+   FillColor       =   &H80000008&
+   Icon            =   "monopoly.frx":0000
+   LinkTopic       =   "Form1"
+   MaxButton       =   0   'False
+   MinButton       =   0   'False
+   MousePointer    =   2  'Cross
+   ScaleHeight     =   10530
+   ScaleWidth      =   13545
+   Begin VB.TextBox Text11 
+      Height          =   285
+      Left            =   3720
+      MaxLength       =   2
+      TabIndex        =   108
+      Top             =   600
+      Visible         =   0   'False
+      Width           =   975
+   End
+   Begin VB.CommandButton Command70 
+      Caption         =   "Constructor"
+      Height          =   255
+      Left            =   3840
+      TabIndex        =   107
+      Top             =   7080
+      Width           =   1455
+   End
+   Begin VB.CommandButton Command69 
+      Caption         =   "Constructor"
+      Height          =   255
+      Left            =   8040
+      TabIndex        =   106
+      Top             =   7080
+      Width           =   1455
+   End
+   Begin VB.Timer Timer1 
+      Left            =   6720
+      Top             =   2520
+   End
+   Begin VB.TextBox Text110 
+      Height          =   285
+      Left            =   8640
+      MaxLength       =   2
+      TabIndex        =   105
+      Top             =   600
+      Visible         =   0   'False
+      Width           =   975
+   End
+   Begin VB.TextBox Text10 
+      BackColor       =   &H00CEB662&
+      Height          =   285
+      Left            =   6840
+      TabIndex        =   103
+      Top             =   9960
+      Width           =   1815
+   End
+   Begin VB.CommandButton Command68 
+      Caption         =   "Sell Cards"
+      Height          =   495
+      Left            =   9720
+      TabIndex        =   102
+      Top             =   7080
+      Width           =   735
+   End
+   Begin VB.CommandButton Command67 
+      Caption         =   "Sell Cards"
+      Height          =   495
+      Left            =   2880
+      TabIndex        =   101
+      Top             =   7080
+      Width           =   735
+   End
+   Begin VB.CommandButton Command66 
+      BackColor       =   &H0080FF80&
+      Caption         =   "         Pune"
+      Height          =   975
+      Left            =   9120
+      Picture         =   "monopoly.frx":0442
+      Style           =   1  'Graphical
+      TabIndex        =   100
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command65 
+      BackColor       =   &H008080FF&
+      Caption         =   "         Pune"
+      Height          =   975
+      Left            =   3480
+      Picture         =   "monopoly.frx":08DE
+      Style           =   1  'Graphical
+      TabIndex        =   99
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command64 
+      BackColor       =   &H0080FF80&
+      Caption         =   " Chandigarh"
+      Height          =   975
+      Left            =   9960
+      Picture         =   "monopoly.frx":0D7A
+      Style           =   1  'Graphical
+      TabIndex        =   98
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command63 
+      BackColor       =   &H008080FF&
+      Caption         =   " Chandigarh"
+      Height          =   975
+      Left            =   2640
+      Picture         =   "monopoly.frx":1252
+      Style           =   1  'Graphical
+      TabIndex        =   97
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command62 
+      BackColor       =   &H0080FF80&
+      Caption         =   "GBM Airport"
+      Height          =   975
+      Left            =   10800
+      Picture         =   "monopoly.frx":172A
+      Style           =   1  'Graphical
+      TabIndex        =   96
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command61 
+      BackColor       =   &H008080FF&
+      Caption         =   "GBM Airport"
+      Height          =   975
+      Left            =   1800
+      Picture         =   "monopoly.frx":1BCE
+      Style           =   1  'Graphical
+      TabIndex        =   95
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command60 
+      BackColor       =   &H0080FF80&
+      Caption         =   " Ahmedabad"
+      Height          =   975
+      Left            =   11640
+      Picture         =   "monopoly.frx":2072
+      Style           =   1  'Graphical
+      TabIndex        =   94
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command59 
+      BackColor       =   &H008080FF&
+      Caption         =   " Ahmedabad"
+      Height          =   975
+      Left            =   960
+      Picture         =   "monopoly.frx":254A
+      Style           =   1  'Graphical
+      TabIndex        =   93
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command58 
+      BackColor       =   &H0080FF80&
+      Caption         =   "Water Works"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":2A22
+      Style           =   1  'Graphical
+      TabIndex        =   92
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command57 
+      BackColor       =   &H008080FF&
+      Caption         =   "Water Works"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":30D3
+      Style           =   1  'Graphical
+      TabIndex        =   91
+      Top             =   7800
+      Width           =   855
+   End
+   Begin VB.CommandButton Command56 
+      BackColor       =   &H0080FF80&
+      Caption         =   "          Agra"
+      Height          =   975
+      Left            =   10800
+      Picture         =   "monopoly.frx":3784
+      Style           =   1  'Graphical
+      TabIndex        =   90
+      Top             =   6840
+      Width           =   855
+   End
+   Begin VB.CommandButton Command55 
+      BackColor       =   &H008080FF&
+      Caption         =   "          Agra"
+      Height          =   975
+      Left            =   1800
+      Picture         =   "monopoly.frx":3C5C
+      Style           =   1  'Graphical
+      TabIndex        =   89
+      Top             =   6840
+      Width           =   855
+   End
+   Begin VB.CommandButton Command54 
+      BackColor       =   &H0080FF80&
+      Caption         =   "International Airport"
+      Height          =   975
+      Left            =   11640
+      Picture         =   "monopoly.frx":4134
+      Style           =   1  'Graphical
+      TabIndex        =   88
+      Top             =   6840
+      Width           =   855
+   End
+   Begin VB.CommandButton Command53 
+      BackColor       =   &H008080FF&
+      Caption         =   "International Airport"
+      Height          =   975
+      Left            =   960
+      Picture         =   "monopoly.frx":45D8
+      Style           =   1  'Graphical
+      TabIndex        =   87
+      Top             =   6840
+      Width           =   855
+   End
+   Begin VB.CommandButton Command52 
+      BackColor       =   &H0080FF80&
+      Caption         =   "    Srinagar"
+      Height          =   975
+      Left            =   10800
+      Picture         =   "monopoly.frx":4A7C
+      Style           =   1  'Graphical
+      TabIndex        =   86
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command51 
+      BackColor       =   &H008080FF&
+      Caption         =   "    Srinagar"
+      Height          =   975
+      Left            =   1800
+      Picture         =   "monopoly.frx":4F18
+      Style           =   1  'Graphical
+      TabIndex        =   85
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command50 
+      BackColor       =   &H0080FF80&
+      Caption         =   "    Chennai"
+      Height          =   975
+      Left            =   11640
+      Picture         =   "monopoly.frx":53B4
+      Style           =   1  'Graphical
+      TabIndex        =   84
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command49 
+      BackColor       =   &H008080FF&
+      Caption         =   "    Chennai"
+      Height          =   975
+      Left            =   960
+      Picture         =   "monopoly.frx":5850
+      Style           =   1  'Graphical
+      TabIndex        =   83
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command48 
+      BackColor       =   &H0080FF80&
+      Caption         =   "        Nasik"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":5CEC
+      Style           =   1  'Graphical
+      TabIndex        =   82
+      Top             =   6840
+      Width           =   855
+   End
+   Begin VB.CommandButton Command47 
+      BackColor       =   &H008080FF&
+      Caption         =   "        Nasik"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":6188
+      Style           =   1  'Graphical
+      TabIndex        =   81
+      Top             =   6840
+      Width           =   855
+   End
+   Begin VB.CommandButton Command46 
+      BackColor       =   &H0080FF80&
+      Caption         =   "I.G.I Airport"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":6624
+      Style           =   1  'Graphical
+      TabIndex        =   80
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command45 
+      BackColor       =   &H008080FF&
+      Caption         =   "I.G.I Airport"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":6AC8
+      Style           =   1  'Graphical
+      TabIndex        =   79
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command44 
+      BackColor       =   &H0080FF80&
+      Caption         =   " Bangalore"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":6F6C
+      Style           =   1  'Graphical
+      TabIndex        =   78
+      Top             =   4920
+      Width           =   855
+   End
+   Begin VB.CommandButton Command43 
+      BackColor       =   &H008080FF&
+      Caption         =   " Bangalore"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":7444
+      Style           =   1  'Graphical
+      TabIndex        =   77
+      Top             =   4920
+      Width           =   855
+   End
+   Begin VB.CommandButton Command42 
+      BackColor       =   &H0080FF80&
+      Caption         =   "    Kolkotta"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":791C
+      Style           =   1  'Graphical
+      TabIndex        =   76
+      Top             =   3960
+      Width           =   855
+   End
+   Begin VB.CommandButton Command41 
+      BackColor       =   &H008080FF&
+      Caption         =   "    Kolkotta"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":7DF4
+      Style           =   1  'Graphical
+      TabIndex        =   75
+      Top             =   3960
+      Width           =   855
+   End
+   Begin VB.CommandButton Command40 
+      BackColor       =   &H0080FF80&
+      Caption         =   " Hyderabad"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":82CC
+      Style           =   1  'Graphical
+      TabIndex        =   74
+      Top             =   3000
+      Width           =   855
+   End
+   Begin VB.CommandButton Command39 
+      BackColor       =   &H008080FF&
+      Caption         =   " Hyderabad"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":87A4
+      Style           =   1  'Graphical
+      TabIndex        =   73
+      Top             =   3000
+      Width           =   855
+   End
+   Begin VB.CommandButton Command38 
+      BackColor       =   &H0080FF80&
+      Caption         =   "ABM Airport"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":8C7C
+      Style           =   1  'Graphical
+      TabIndex        =   72
+      Top             =   2040
+      Width           =   855
+   End
+   Begin VB.CommandButton Command37 
+      BackColor       =   &H008080FF&
+      Caption         =   "ABM Airport"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":9120
+      Style           =   1  'Graphical
+      TabIndex        =   71
+      Top             =   2040
+      Width           =   855
+   End
+   Begin VB.CommandButton Command34 
+      BackColor       =   &H0080FF80&
+      Caption         =   "     Mumbai"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":95C4
+      Style           =   1  'Graphical
+      TabIndex        =   70
+      Top             =   1080
+      Width           =   855
+   End
+   Begin VB.CommandButton Command33 
+      BackColor       =   &H008080FF&
+      Caption         =   "     Mumbai"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":9A60
+      Style           =   1  'Graphical
+      TabIndex        =   69
+      Top             =   1080
+      Width           =   855
+   End
+   Begin VB.CommandButton Command36 
+      BackColor       =   &H0080FF80&
+      Caption         =   " New Delhi"
+      Height          =   975
+      Left            =   12480
+      Picture         =   "monopoly.frx":9EFC
+      Style           =   1  'Graphical
+      TabIndex        =   68
+      Top             =   120
+      Width           =   855
+   End
+   Begin VB.CommandButton Command35 
+      BackColor       =   &H008080FF&
+      Caption         =   " New Delhi"
+      Height          =   975
+      Left            =   120
+      Picture         =   "monopoly.frx":A398
+      Style           =   1  'Graphical
+      TabIndex        =   67
+      Top             =   120
+      Width           =   855
+   End
+   Begin VB.CommandButton Command32 
+      Caption         =   "?"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   8160
+      TabIndex        =   64
+      Top             =   3000
+      Width           =   495
+   End
+   Begin VB.CommandButton Command28 
+      Caption         =   "End &Game"
+      Height          =   495
+      Left            =   5520
+      TabIndex        =   62
+      Top             =   0
+      Width           =   1935
+   End
+   Begin VB.TextBox Text1001 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   4200
+      Locked          =   -1  'True
+      TabIndex        =   61
+      Top             =   10080
+      Width           =   495
+   End
+   Begin VB.TextBox Text1000 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   4200
+      Locked          =   -1  'True
+      TabIndex        =   60
+      Top             =   9720
+      Width           =   495
+   End
+   Begin VB.TextBox Text203 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   9120
+      Locked          =   -1  'True
+      TabIndex        =   57
+      Top             =   10080
+      Width           =   495
+   End
+   Begin VB.TextBox Text202 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   9120
+      Locked          =   -1  'True
+      TabIndex        =   56
+      Top             =   9720
+      Width           =   495
+   End
+   Begin VB.TextBox Text102 
+      BackColor       =   &H00D3BD70&
+      Height          =   285
+      Left            =   9720
+      Locked          =   -1  'True
+      TabIndex        =   55
+      Top             =   10080
+      Width           =   855
+   End
+   Begin VB.TextBox Text101 
+      BackColor       =   &H00D3BD70&
+      Height          =   285
+      Left            =   9720
+      Locked          =   -1  'True
+      TabIndex        =   54
+      Top             =   9720
+      Width           =   855
+   End
+   Begin VB.TextBox Text100 
+      BackColor       =   &H00D3BD70&
+      Height          =   285
+      Left            =   3240
+      Locked          =   -1  'True
+      TabIndex        =   53
+      Top             =   9720
+      Width           =   855
+   End
+   Begin VB.TextBox Text9 
+      BackColor       =   &H00CEB662&
+      Height          =   285
+      Left            =   10680
+      Locked          =   -1  'True
+      TabIndex        =   51
+      Top             =   10080
+      Width           =   1335
+   End
+   Begin VB.TextBox Text7 
+      BackColor       =   &H00CEB662&
+      Height          =   285
+      Left            =   10680
+      Locked          =   -1  'True
+      TabIndex        =   50
+      Top             =   9720
+      Width           =   1335
+   End
+   Begin VB.TextBox Text8 
+      BackColor       =   &H00CEB662&
+      Height          =   285
+      Left            =   1560
+      Locked          =   -1  'True
+      TabIndex        =   49
+      Top             =   10080
+      Width           =   1335
+   End
+   Begin VB.TextBox Text6 
+      BackColor       =   &H00CEB662&
+      Height          =   285
+      Left            =   1560
+      Locked          =   -1  'True
+      TabIndex        =   48
+      Top             =   9720
+      Width           =   1335
+   End
+   Begin VB.CommandButton Command31 
+      Caption         =   "&Loan 2"
+      Height          =   375
+      Left            =   12240
+      TabIndex        =   47
+      Top             =   10080
+      Width           =   1095
+   End
+   Begin VB.CommandButton Command30 
+      Caption         =   "&Loan 1"
+      Height          =   375
+      Left            =   12240
+      TabIndex        =   46
+      Top             =   9600
+      Width           =   1095
+   End
+   Begin VB.CommandButton Command29 
+      Caption         =   "&Loan 1"
+      Height          =   375
+      Left            =   240
+      TabIndex        =   45
+      Top             =   9600
+      Width           =   1095
+   End
+   Begin VB.CommandButton Command26 
+      Caption         =   "&Loan 2"
+      Height          =   375
+      Left            =   240
+      TabIndex        =   44
+      Top             =   10080
+      Width           =   1095
+   End
+   Begin VB.TextBox Text5 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   10320
+      TabIndex        =   43
+      Top             =   5280
+      Width           =   1935
+   End
+   Begin VB.CommandButton Command27 
+      Caption         =   "Start"
+      Height          =   1095
+      Left            =   3600
+      Style           =   1  'Graphical
+      TabIndex        =   41
+      Top             =   960
+      Width           =   975
+   End
+   Begin VB.TextBox Text4 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   8400
+      MaxLength       =   1
+      TabIndex        =   39
+      ToolTipText     =   "Enter 1 to initiate player1's move and 2 for player2's move "
+      Top             =   3720
+      Width           =   255
+   End
+   Begin VB.ListBox List2 
+      BackColor       =   &H00E1D29D&
+      Height          =   1035
+      Left            =   10320
+      TabIndex        =   36
+      Top             =   1200
+      Width           =   1935
+   End
+   Begin VB.TextBox Text3 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   10320
+      TabIndex        =   33
+      Top             =   2520
+      Width           =   1935
+   End
+   Begin VB.TextBox Text2 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   7080
+      TabIndex        =   32
+      ToolTipText     =   "Enter 'pl1' during player1's move and 'pl2' for player2's move"
+      Top             =   5280
+      Width           =   735
+   End
+   Begin VB.CommandButton Command25 
+      Caption         =   "Move"
+      Height          =   255
+      Left            =   7920
+      TabIndex        =   31
+      Top             =   5280
+      Width           =   735
+   End
+   Begin VB.CommandButton Command7 
+      Caption         =   "Free Parking"
+      Height          =   1095
+      Left            =   3600
+      Style           =   1  'Graphical
+      TabIndex        =   6
+      Top             =   5880
+      Width           =   975
+   End
+   Begin VB.CommandButton Command22 
+      Caption         =   "  Ahmedabad"
+      Height          =   975
+      Left            =   3600
+      Picture         =   "monopoly.frx":A834
+      Style           =   1  'Graphical
+      TabIndex        =   28
+      Top             =   4920
+      Width           =   975
+   End
+   Begin VB.CommandButton Command23 
+      Caption         =   "GBM Airport"
+      Height          =   975
+      Left            =   3600
+      Picture         =   "monopoly.frx":AD0C
+      Style           =   1  'Graphical
+      TabIndex        =   29
+      Top             =   3960
+      Width           =   975
+   End
+   Begin VB.CommandButton Command6 
+      Caption         =   "  Chandigarh"
+      Height          =   975
+      Left            =   3600
+      Picture         =   "monopoly.frx":B1B0
+      Style           =   1  'Graphical
+      TabIndex        =   5
+      Top             =   3000
+      Width           =   975
+   End
+   Begin VB.CommandButton Command5 
+      Caption         =   "           Pune"
+      Height          =   975
+      Left            =   3600
+      Picture         =   "monopoly.frx":B688
+      Style           =   1  'Graphical
+      TabIndex        =   4
+      Top             =   2040
+      Width           =   975
+   End
+   Begin VB.CommandButton Command4 
+      Caption         =   "Petrol"
+      Height          =   1095
+      Left            =   8760
+      Style           =   1  'Graphical
+      TabIndex        =   3
+      Top             =   960
+      Width           =   975
+   End
+   Begin VB.CommandButton Command16 
+      Caption         =   " Hyderabad"
+      Height          =   1095
+      Left            =   7920
+      Picture         =   "monopoly.frx":BB24
+      Style           =   1  'Graphical
+      TabIndex        =   22
+      Top             =   960
+      Width           =   855
+   End
+   Begin VB.CommandButton Command15 
+      Caption         =   "Community Chest"
+      Height          =   1095
+      Left            =   7080
+      Style           =   1  'Graphical
+      TabIndex        =   21
+      Top             =   960
+      Width           =   855
+   End
+   Begin VB.CommandButton Command14 
+      Caption         =   "ABM Airport"
+      Height          =   1095
+      Left            =   6240
+      Picture         =   "monopoly.frx":BFFC
+      Style           =   1  'Graphical
+      TabIndex        =   20
+      Top             =   960
+      Width           =   855
+   End
+   Begin VB.CommandButton Command3 
+      Caption         =   "     Mumbai"
+      Height          =   1095
+      Left            =   5400
+      Picture         =   "monopoly.frx":C4A0
+      Style           =   1  'Graphical
+      TabIndex        =   2
+      Top             =   960
+      Width           =   855
+   End
+   Begin VB.CommandButton Command2 
+      Caption         =   " New Delhi"
+      Height          =   1095
+      Left            =   4560
+      MaskColor       =   &H8000000F&
+      Picture         =   "monopoly.frx":C93C
+      Style           =   1  'Graphical
+      TabIndex        =   1
+      Top             =   960
+      Width           =   855
+   End
+   Begin VB.CommandButton Command18 
+      Caption         =   "           Nasik"
+      Height          =   975
+      Left            =   8760
+      Picture         =   "monopoly.frx":CDD8
+      Style           =   1  'Graphical
+      TabIndex        =   24
+      Top             =   4920
+      Width           =   975
+   End
+   Begin VB.CommandButton Command17 
+      Caption         =   "I.G.I Airport"
+      Height          =   975
+      Left            =   8760
+      Picture         =   "monopoly.frx":D274
+      Style           =   1  'Graphical
+      TabIndex        =   23
+      Top             =   3960
+      Width           =   975
+   End
+   Begin VB.CommandButton Command9 
+      Caption         =   "    Bangalore"
+      Height          =   975
+      Left            =   8760
+      Picture         =   "monopoly.frx":D718
+      Style           =   1  'Graphical
+      TabIndex        =   8
+      Top             =   3000
+      Width           =   975
+   End
+   Begin VB.CommandButton Command8 
+      Caption         =   "       Kolkotta"
+      Height          =   975
+      Left            =   8760
+      Picture         =   "monopoly.frx":DBF0
+      Style           =   1  'Graphical
+      TabIndex        =   7
+      Top             =   2040
+      Width           =   975
+   End
+   Begin VB.CommandButton Command10 
+      Caption         =   "Jail"
+      Height          =   1095
+      Left            =   8760
+      Picture         =   "monopoly.frx":E0C8
+      Style           =   1  'Graphical
+      TabIndex        =   9
+      Top             =   5880
+      Width           =   975
+   End
+   Begin VB.CommandButton Command12 
+      Caption         =   "    Chennai"
+      Height          =   1095
+      Left            =   7920
+      Picture         =   "monopoly.frx":EF1C
+      Style           =   1  'Graphical
+      TabIndex        =   11
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command19 
+      Caption         =   "    Srinagar"
+      Height          =   1095
+      Left            =   7080
+      Picture         =   "monopoly.frx":F3B8
+      Style           =   1  'Graphical
+      TabIndex        =   25
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command20 
+      Caption         =   "International Airport"
+      Height          =   1095
+      Left            =   6240
+      Picture         =   "monopoly.frx":F854
+      Style           =   1  'Graphical
+      TabIndex        =   26
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command21 
+      Caption         =   "          Agra"
+      Height          =   1095
+      Left            =   5400
+      Picture         =   "monopoly.frx":FCF8
+      Style           =   1  'Graphical
+      TabIndex        =   27
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command11 
+      Caption         =   "Water Works"
+      Height          =   1095
+      Left            =   4560
+      Picture         =   "monopoly.frx":101D0
+      Style           =   1  'Graphical
+      TabIndex        =   10
+      Top             =   5880
+      Width           =   855
+   End
+   Begin VB.CommandButton Command1 
+      Caption         =   "Start"
+      Height          =   1095
+      Left            =   3600
+      TabIndex        =   0
+      Top             =   960
+      Width           =   975
+   End
+   Begin VB.CommandButton Command24 
+      Caption         =   "Community Chest"
+      Height          =   615
+      Left            =   7200
+      Style           =   1  'Graphical
+      TabIndex        =   30
+      Top             =   2280
+      Width           =   1455
+   End
+   Begin VB.TextBox Text90 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   8400
+      TabIndex        =   17
+      ToolTipText     =   "Enter 'y' for YES and 'no' for NO"
+      Top             =   4200
+      Width           =   255
+   End
+   Begin VB.CommandButton Command13 
+      Caption         =   "Roll Dice"
+      Height          =   495
+      Left            =   8040
+      TabIndex        =   16
+      Top             =   4560
+      Width           =   615
+   End
+   Begin VB.TextBox Text23 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   7320
+      TabIndex        =   14
+      Top             =   4680
+      Width           =   495
+   End
+   Begin VB.TextBox Text1 
+      BackColor       =   &H00E1D29D&
+      Height          =   285
+      Left            =   1200
+      TabIndex        =   12
+      Top             =   2520
+      Width           =   1815
+   End
+   Begin VB.TextBox Text99 
+      BackColor       =   &H00D3BD70&
+      Height          =   285
+      Left            =   3240
+      Locked          =   -1  'True
+      TabIndex        =   52
+      Top             =   10080
+      Width           =   855
+   End
+   Begin VB.ListBox List1 
+      BackColor       =   &H00E1D29D&
+      Height          =   1035
+      Left            =   1200
+      TabIndex        =   35
+      Top             =   1200
+      Width           =   1815
+   End
+   Begin VB.Label Label13 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Stock Market:"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   255
+      Left            =   5280
+      TabIndex        =   104
+      Top             =   9960
+      Width           =   1335
+   End
+   Begin VB.OLE OLE2 
+      BackStyle       =   0  'Transparent
+      BorderStyle     =   0  'None
+      Class           =   "Package"
+      Height          =   765
+      Left            =   1560
+      OleObjectBlob   =   "monopoly.frx":10881
+      OLETypeAllowed  =   1  'Embedded
+      SizeMode        =   2  'AutoSize
+      SourceDoc       =   "F:\Holiday Island\MUSIK\Floatin'.mid"
+      TabIndex        =   66
+      Top             =   120
+      Width           =   990
+   End
+   Begin VB.OLE OLE1 
+      BackStyle       =   0  'Transparent
+      BorderStyle     =   0  'None
+      Class           =   "Package"
+      Height          =   765
+      Left            =   10680
+      OleObjectBlob   =   "monopoly.frx":22A99
+      OLETypeAllowed  =   1  'Embedded
+      SizeMode        =   2  'AutoSize
+      SourceDoc       =   "F:\Holiday Island\MUSIK\Endeloop.mid"
+      TabIndex        =   65
+      Top             =   120
+      Width           =   1215
+   End
+   Begin VB.Label Label2 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Dice"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00C00000&
+      Height          =   255
+      Left            =   6840
+      TabIndex        =   15
+      Top             =   4680
+      Width           =   495
+   End
+   Begin VB.Label Label12 
+      Alignment       =   2  'Center
+      BackStyle       =   0  'Transparent
+      Caption         =   "A++ Interactive"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   21.75
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H000000C0&
+      Height          =   1095
+      Left            =   5880
+      TabIndex        =   63
+      Top             =   7920
+      Width           =   2175
+   End
+   Begin VB.Image Image12 
+      Height          =   375
+      Left            =   10200
+      Picture         =   "monopoly.frx":31EB1
+      Stretch         =   -1  'True
+      Top             =   840
+      Width           =   375
+   End
+   Begin VB.Image Image11 
+      Height          =   375
+      Left            =   2640
+      Picture         =   "monopoly.frx":322F3
+      Stretch         =   -1  'True
+      Top             =   840
+      Width           =   375
+   End
+   Begin VB.Label Label11 
+      BackStyle       =   0  'Transparent
+      Caption         =   "@Rate of Interest"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   4200
+      TabIndex        =   59
+      Top             =   9240
+      Width           =   855
+   End
+   Begin VB.Label Label7 
+      BackStyle       =   0  'Transparent
+      Caption         =   "@Rate of Interest"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   9000
+      TabIndex        =   58
+      Top             =   9240
+      Width           =   855
+   End
+   Begin VB.Label Label10 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Enter Your Player No.:"
+      BeginProperty Font 
+         Name            =   "MS Sans Serif"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00C00000&
+      Height          =   255
+      Left            =   6480
+      TabIndex        =   40
+      Top             =   3720
+      Width           =   2055
+   End
+   Begin VB.Image Image9 
+      Height          =   2160
+      Left            =   1080
+      Picture         =   "monopoly.frx":32735
+      Stretch         =   -1  'True
+      Top             =   3360
+      Width           =   2040
+   End
+   Begin VB.Image Image10 
+      Height          =   2250
+      Left            =   10320
+      MouseIcon       =   "monopoly.frx":41B3F
+      MousePointer    =   99  'Custom
+      Picture         =   "monopoly.frx":41F89
+      Stretch         =   -1  'True
+      Top             =   2880
+      Width           =   1935
+   End
+   Begin VB.Image Image8 
+      Height          =   2160
+      Left            =   1080
+      Picture         =   "monopoly.frx":480A9
+      Stretch         =   -1  'True
+      Top             =   3360
+      Width           =   2040
+   End
+   Begin VB.Image Image7 
+      Height          =   2160
+      Left            =   1080
+      Picture         =   "monopoly.frx":5C3CE
+      Stretch         =   -1  'True
+      Top             =   3360
+      Width           =   2040
+   End
+   Begin VB.Image Image6 
+      Height          =   2160
+      Left            =   1080
+      Picture         =   "monopoly.frx":6B23B
+      Stretch         =   -1  'True
+      Top             =   3360
+      Width           =   2040
+   End
+   Begin VB.Image Image5 
+      Height          =   2160
+      Left            =   1080
+      Picture         =   "monopoly.frx":7F06B
+      Stretch         =   -1  'True
+      Top             =   3360
+      Width           =   2040
+   End
+   Begin VB.Image Image4 
+      Height          =   2160
+      Left            =   1080
+      Picture         =   "monopoly.frx":8FFF2
+      Stretch         =   -1  'True
+      Top             =   3360
+      Width           =   2040
+   End
+   Begin VB.Image Image3 
+      Height          =   2415
+      Left            =   5280
+      MouseIcon       =   "monopoly.frx":A25AA
+      MousePointer    =   99  'Custom
+      Picture         =   "monopoly.frx":A29EC
+      Stretch         =   -1  'True
+      Top             =   3360
+      Width           =   1170
+   End
+   Begin VB.Label Label6 
+      Alignment       =   2  'Center
+      BackStyle       =   0  'Transparent
+      Caption         =   "PICTURE POSTCARD"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
+      Height          =   375
+      Left            =   1560
+      TabIndex        =   42
+      Top             =   2880
+      Width           =   975
+   End
+   Begin VB.Label Label9 
+      BackStyle       =   0  'Transparent
+      Caption         =   "PLAYER 2"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   10560
+      TabIndex        =   38
+      Top             =   840
+      Width           =   1695
+   End
+   Begin VB.Label Label8 
+      BackStyle       =   0  'Transparent
+      Caption         =   "PLAYER 1"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   12
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   375
+      Left            =   1080
+      TabIndex        =   37
+      Top             =   840
+      Width           =   1815
+   End
+   Begin VB.Label Label5 
+      BackStyle       =   0  'Transparent
+      Caption         =   "AMOUNT"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
+      Height          =   255
+      Left            =   10920
+      TabIndex        =   34
+      Top             =   2280
+      Width           =   855
+   End
+   Begin VB.Label Label4 
+      Alignment       =   2  'Center
+      BackStyle       =   0  'Transparent
+      Caption         =   "Free : Do all your arithmetic calculations on the Geeculator."
+      BeginProperty Font 
+         Name            =   "Arial"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   495
+      Left            =   3840
+      TabIndex        =   19
+      Top             =   7440
+      Width           =   5895
+   End
+   Begin VB.Label Label3 
+      BackStyle       =   0  'Transparent
+      Caption         =   "Choice(y/n):"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00C00000&
+      Height          =   255
+      Left            =   7320
+      TabIndex        =   18
+      Top             =   4200
+      Width           =   975
+   End
+   Begin VB.Label Label1 
+      BackStyle       =   0  'Transparent
+      Caption         =   "AMOUNT"
+      BeginProperty Font 
+         Name            =   "Times New Roman"
+         Size            =   8.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
+      Height          =   255
+      Left            =   1680
+      TabIndex        =   13
+      Top             =   2280
+      Width           =   975
+   End
+   Begin VB.Image Image1 
+      Height          =   5760
+      Left            =   4200
+      Picture         =   "monopoly.frx":A456F
+      Stretch         =   -1  'True
+      Top             =   1080
+      Width           =   5160
+   End
+   Begin VB.Image Image2 
+      Height          =   10575
+      Left            =   0
+      Picture         =   "monopoly.frx":AF7F8
+      Stretch         =   -1  'True
+      Top             =   0
+      Width           =   13575
+   End
+End
+Attribute VB_Name = "Form1"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+
+Private Sub Command1_Click()
+MsgBox "After completing each round please click START BUTTON.", vbExclamation
+Text1.text = "0"
+Text3.text = "0"
+MsgBox "Get Your Paycheck Rs.2000"
+Text1.text = Text1.text + 2000
+Text3.text = Text3.text + 2000
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command1.Enabled = False
+Command1.Visible = False
+Command27.Enabled = True
+Command27.Visible = True
+Image3.Enabled = True
+Image10.Enabled = True
+End Sub
+
+Private Sub Command10_Click()
+Text1.Locked = True
+Text5.text = "I would pay as soon as possible to be Free."
+If Text2.text = "pl1" Then
+MsgBox " Pl1 is in JAIL                PAY Rs.1800 TO BE FREE"
+Text1.text = Text1.text - 1800
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+End If
+If Text2.text = "pl2" Then
+MsgBox " Pl2 is in JAIL                PAY Rs.1800 TO BE FREE"
+Text3.text = Text3.text - 1800
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+End If
+End Sub
+
+Private Sub Command11_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command2.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 2
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Would think it as a liability."
+Else
+End If
+If text = 2 Then
+Text5.text = "No comments."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command11.Caption = "Water Works" Then
+If Text2.text = "pl1" Then
+MsgBox "WATER WORKS                       Rent = Rs.20                         Purchase = Rs.150"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command57.Visible = True
+Command11.FontBold = True
+Text1.text = Text1.text - 150
+Command11.BackColor = &H8080FF
+Command21.Caption = "pl1 Water Works"
+List1.AddItem "Pl-1 Water Works Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command11.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command21.Caption = "pl1 Water Works" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 20
+Text1.text = Text1.text + 20
+End If
+Else
+End If
+End If
+If Command11.Caption = "Water Works" Then
+If Text2.text = "pl2" Then
+MsgBox "WATER WORKS                       Rent = Rs.20                         Purchase = Rs.150"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command58.Visible = True
+Command11.FontBold = True
+Text3.text = Text3.text - 150
+Command11.BackColor = &H80FF80
+Command11.Caption = "pl2 Water Works"
+List2.AddItem "Pl-2 Water Works Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command11.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command11.Caption = "pl2 Water Works" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 20
+Text3.text = Text3.text + 20
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command12_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command2.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Good for trade."
+Else
+End If
+If text = 2 Then
+Text5.text = "Good Deal."
+Else
+End If
+If text = 3 Then
+Text5.text = "A Metropolitian."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command12.Caption = "    Chennai" Then
+If Text2.text = "pl1" Then
+MsgBox "CHENNAI                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command49.Visible = True
+Text1.text = Text1.text - 300
+Command12.BackColor = &H8080FF
+Command12.FontBold = True
+Command12.Caption = "pl1 Chennai"
+List1.AddItem "Pl-1 Chennai Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command12.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command12.Caption = "pl1 Chennai" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 50
+Text1.text = Text1.text + 50
+End If
+Else
+End If
+End If
+If Command12.Caption = "    Chennai" Then
+If Text2.text = "pl2" Then
+MsgBox "CHENNAI                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command50.Visible = True
+Command12.FontBold = True
+Text3.text = Text3.text - 300
+Command12.BackColor = &H80FF80
+Command12.Caption = "pl2 Chennai"
+List2.AddItem "Pl-2 Chennai Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command12.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command12.Caption = "pl2 Chennai" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 50
+Text3.text = Text3.text + 50
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command13_Click()
+If Text4.text = "1" Then
+Form1.MousePointer = 2
+Text2.text = "pl1"
+Else
+End If
+If Text4.text = "2" Then
+Form1.MousePointer = 3
+Text2.text = "pl2"
+Else
+End If
+Dim dice, Lowest, Highest As Integer
+Lowest = 1
+Highest = 12
+Randomize
+dice = Int((Highest - Lowest + 1) * Rnd + Lowest)
+If dice <= 12 Then
+Let Text23.text = dice
+Let Text110.text = dice
+Else
+MsgBox "Not More than Two Dices should be used", vbDefaultButton1
+End
+End If
+MsgBox "Dice thrown", vbDefaultButton1
+Text23.text = ""
+If Text1 < 0 Or Text3 < 0 Then
+If Text1 < 0 And Text4.text = "1" Then
+MsgBox "Cannot Buy,Player 1 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+If Text3 < 0 And Text4.text = "2" Then
+MsgBox "Cannot Buy,Player 2 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+Else
+End If
+If Text1 > 0 And Text3 > 0 Then
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+Else
+End If
+End Sub
+
+Private Sub Command14_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command2.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command1.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Awesome Airport."
+Else
+End If
+If text = 2 Then
+Text5.text = "Great Deal."
+Else
+End If
+If text = 3 Then
+Text5.text = "Flight Capacity of 20000 people per Hour"
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command14.Caption = "ABM Airport" Then
+If Text2.text = "pl1" Then
+MsgBox "ABM AIRPORT                       Rent = Rs.260                         Purchase = Rs.1500"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command37.Visible = True
+List1.AddItem "Pl-1 ABM Airport Bought "
+Text1.text = Text1.text - 1500
+Command14.BackColor = &H8080FF
+Command14.FontBold = True
+Command14.Caption = "pl1 ABM Airport"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command14.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command14.Caption = "pl1 ABM Airport" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 260
+Text1.text = Text1.text + 260
+End If
+Else
+End If
+End If
+If Command14.Caption = "ABM Airport" Then
+If Text2.text = "pl2" Then
+MsgBox "ABM AIRPORT                       Rent = Rs.260                         Purchase = Rs.1500"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command38.Visible = True
+List2.AddItem "Pl-2 ABM Airport Bought"
+Text3.text = Text3.text - 1500
+Command14.BackColor = &H80FF80
+Command14.FontBold = True
+Command14.Caption = "pl2 ABM Airport"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command14.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command14.Caption = "pl2 ABM Airport" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 260
+Text3.text = Text3.text + 260
+End If
+Else
+End If
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command15_Click()
+Command27.Enabled = False
+Text1.Locked = True
+MsgBox "COMMUNITY CHEST"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = True
+End Sub
+
+Private Sub Command16_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command2.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command1.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Good Investment."
+Else
+End If
+If text = 2 Then
+Text5.text = "Great Deal."
+Else
+End If
+If text = 3 Then
+Text5.text = "Also Termed as CYBERABAD."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command16.Caption = " Hyderabad" Then
+If Text2.text = "pl1" Then
+MsgBox "HYDERABAD                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command39.Visible = True
+List1.AddItem "Pl-1 Hyderabad Bought  "
+Text1.text = Text1.text - 300
+Command16.BackColor = &H8080FF
+Command16.FontBold = True
+Command16.Caption = "pl1 Hyderabad"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command16.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command16.Caption = "pl1 Hyderabad" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 50
+Text1.text = Text1.text + 50
+End If
+Else
+End If
+End If
+If Command16.Caption = " Hyderabad" Then
+If Text2.text = "pl2" Then
+MsgBox "HYDERABAD                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command40.Visible = True
+List2.AddItem "Pl-2 Hyderabad Bought "
+Text3.text = Text3.text - 300
+Command16.BackColor = &H80FF80
+Command16.FontBold = True
+Command16.Caption = "pl2 Hyderabad"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command16.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command16.Caption = "pl2 Hyderabad" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 50
+Text3.text = Text3.text + 50
+End If
+Else
+End If
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command17_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command2.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command1.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 2
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Take your own decision."
+Else
+End If
+If text = 2 Then
+Text5.text = "No Comments."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command17.Caption = "I.G.I Airport" Then
+If Text2.text = "pl1" Then
+MsgBox "I.G.I AIRPORT                       Rent = Rs.60                         Purchase = Rs.500"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command45.Visible = True
+Text1.text = Text1.text - 500
+Command17.BackColor = &H8080FF
+Command17.FontBold = True
+Command17.Caption = "pl1 I.G.I Airport"
+List1.AddItem "Pl-1 I.G.I Airport Bought "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command17.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command17.Caption = "pl1 I.G.I Airport" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 60
+Text1.text = Text1.text + 60
+End If
+Else
+End If
+End If
+If Command17.Caption = "I.G.I Airport" Then
+If Text2.text = "pl2" Then
+MsgBox "I.G.I AIRPORT                       Rent = Rs.60                         Purchase = Rs.500"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command46.Visible = True
+Text3.text = Text3.text - 500
+Command17.BackColor = &H80FF80
+Command17.FontBold = True
+Command17.Caption = "pl2 I.G.I Airport"
+List2.AddItem "Pl-2 I.G.I Airport Bought "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command17.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command17.Caption = "pl2 I.G.I Airport" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 60
+Text3.text = Text3.text + 60
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command18_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command2.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+If Text110.text = "12" Then
+Command27.Enabled = True
+Text1.Locked = True
+Else
+End If
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 1
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "No comments."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command18.Caption = "           Nasik" Then
+If Text2.text = "pl1" Then
+MsgBox "NASIK                          Rent = Rs.60                         Purchase = Rs.400"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command47.Visible = True
+Text1.text = Text1.text - 400
+Command18.BackColor = &H8080FF
+Command18.FontBold = True
+Command18.Caption = "pl1 Nasik"
+List1.AddItem "Pl-1 Nasik Bought "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command18.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command18.Caption = "pl1 Nasik" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 60
+Text1.text = Text1.text + 60
+End If
+Else
+End If
+End If
+If Command18.Caption = "           Nasik" Then
+If Text2.text = "pl2" Then
+MsgBox "NASIK                          Rent = Rs.60                         Purchase = Rs.400"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command48.Visible = True
+Text3.text = Text3.text - 400
+Command18.BackColor = &H80FF80
+Command18.FontBold = True
+Command18.Caption = "pl2 Nasik"
+List2.AddItem "Pl-2 Nasik Bought "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command18.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command18.Caption = "pl2 Nasik" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 60
+Text3.text = Text3.text + 60
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command19_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command2.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Termed as The Heaven on Earth."
+Else
+End If
+If text = 2 Then
+Text5.text = "But is Hit by Terrorism."
+Else
+End If
+If text = 3 Then
+Text5.text = "Great deal."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command19.Caption = "    Srinagar" Then
+If Text2.text = "pl1" Then
+MsgBox "SRINAGAR                       Rent = Rs.60                         Purchase = Rs.600"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command51.Visible = True
+Text1.text = Text1.text - 600
+Command19.BackColor = &H8080FF
+Command19.FontBold = True
+Command19.Caption = "pl1 Srinagar"
+List1.AddItem "Pl-1 Srinagar Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command19.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command19.Caption = "pl1 Srinagar" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 60
+Text1.text = Text1.text + 60
+End If
+Else
+End If
+End If
+If Command19.Caption = "    Srinagar" Then
+If Text2.text = "pl2" Then
+MsgBox "SRINAGAR                       Rent = Rs.60                         Purchase = Rs.600"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command52.Visible = True
+Command19.FontBold = True
+Text3.text = Text3.text - 600
+Command19.BackColor = &H80FF80
+Command19.Caption = "pl2 Srinagar"
+List2.AddItem "Pl-2 Srinagar Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command19.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command19.Caption = "pl2 Srinagar" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 60
+Text3.text = Text3.text + 60
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command2_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command1.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "This is the capital of INDIA."
+Else
+End If
+If text = 2 Then
+Text5.text = "Great Deal."
+Else
+End If
+If text = 3 Then
+Text5.text = "Has a population of over 1 crore."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command2.Caption = " New Delhi" Then
+If Text2.text = "pl1" Then
+MsgBox "NEW DELHI                       Rent = Rs.100                         Purchase = Rs.1000"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Text1.text = Text1.text - 1000
+Command2.BackColor = &H8080FF
+Command35.Visible = True
+Command2.FontBold = True
+List1.AddItem "Pl-1 New Delhi Bought"
+Command2.Caption = "pl1 New Delhi"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Command27.Enabled = True
+Else
+Text90.text = ""
+Command2.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command2.Caption = "pl1 New Delhi" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 100
+Text1.text = Text1.text + 100
+End If
+Else
+End If
+End If
+If Command2.Caption = " New Delhi" Then
+If Text2.text = "pl2" Then
+MsgBox "NEW DELHI                       Rent = Rs.100                         Purchase = Rs.1000"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command36.Visible = True
+Text3.text = Text3.text - 1000
+Command2.BackColor = &H80FF80
+Command2.FontBold = True
+List2.AddItem "Pl-2 New Delhi Bought"
+Command2.Caption = "pl2 New Delhi"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command2.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command2.Caption = "pl2 New Delhi" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 100
+Text3.text = Text3.text + 100
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command20_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command2.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 2
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "No comments."
+Else
+End If
+If text = 2 Then
+Text5.text = "Good Investment."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command20.Caption = "International Airport" Then
+If Text2.text = "pl1" Then
+MsgBox "INTERNATIONAL AIRPORT                       Rent = Rs.60                         Purchase = Rs.500"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command53.Visible = True
+Command20.FontBold = True
+Text1.text = Text1.text - 500
+Command20.BackColor = &H8080FF
+Command20.Caption = "pl1 International Airport"
+List1.AddItem "Pl-1 International Airport Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command20.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command20.Caption = "pl1 International Airport" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 60
+Text1.text = Text1.text + 60
+End If
+Else
+End If
+End If
+If Command20.Caption = "International Airport" Then
+If Text2.text = "pl2" Then
+MsgBox "INTERNATIONAL AIRPORT                       Rent = Rs.60                         Purchase = Rs.500"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command54.Visible = True
+Text3.text = Text3.text - 500
+Command20.FontBold = True
+Command20.BackColor = &H80FF80
+Command20.Caption = "pl2 International Airport"
+List2.AddItem "Pl-2 International Airport Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+End If
+Else
+End If
+Else
+If Command20.Caption = "pl2 International Airport" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 60
+Text3.text = Text3.text + 60
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command21_Click()
+On Error Resume Next
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command2.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Great Deal."
+Else
+End If
+If text = 2 Then
+Text5.text = "The Taj Mahal is Located in Agra."
+Else
+End If
+If text = 3 Then
+Text5.text = "Historically Important."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command21.Caption = "          Agra" Then
+If Text2.text = "pl1" Then
+MsgBox "AGRA                       Rent = Rs.56                         Purchase = Rs.350"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command55.Visible = True
+Command21.FontBold = True
+Text1.text = Text1.text - 350
+Command21.BackColor = &H8080FF
+Command21.Caption = "pl1 Agra"
+List1.AddItem "Pl-1 Agra Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command21.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command21.Caption = "pl1 Agra" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 56
+Text1.text = Text1.text + 56
+End If
+Else
+End If
+End If
+If Command21.Caption = "          Agra" Then
+If Text2.text = "pl2" Then
+MsgBox "AGRA                       Rent = Rs.56                         Purchase = Rs.350"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command56.Visible = True
+Command21.FontBold = True
+Text3.text = Text3.text - 350
+Command21.BackColor = &H80FF80
+Command21.Caption = "pl2 Agra"
+List2.AddItem "Pl-2 Agra Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command21.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command21.Caption = "pl2 Agra" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 56
+Text3.text = Text3.text + 56
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command22_Click()
+On Error Resume Next
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command2.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Text5.text = "No Comments."
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command22.Caption = "  Ahmedabad" Then
+If Text2.text = "pl1" Then
+MsgBox "AHMEDABAD                       Rent = Rs.28                         Purchase = Rs.200"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command59.Visible = True
+Command22.FontBold = True
+Text1.text = Text1.text - 200
+Command22.BackColor = &H8080FF
+Command22.Caption = "pl1 Ahmedabad"
+List1.AddItem "Pl-1 Ahmedabad Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command22.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command22.Caption = "pl1 Ahmedabad" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 28
+Text1.text = Text1.text + 28
+End If
+Else
+End If
+End If
+If Command22.Caption = "  Ahmedabad" Then
+If Text2.text = "pl2" Then
+MsgBox "AHMEDABAD                       Rent = Rs.28                         Purchase = Rs.200"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command60.Visible = True
+Command22.FontBold = True
+Text3.text = Text3.text - 200
+Command22.BackColor = &H80FF80
+Command22.Caption = "pl2 Ahmedabad"
+List2.AddItem "Pl-2 Ahmedabad Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command22.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command22.Caption = "pl2 Ahmedabad" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 28
+Text3.text = Text3.text + 28
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command23_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command2.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Owned by Moudi3000."
+Else
+End If
+If text = 2 Then
+Text5.text = "Great Deal."
+Else
+End If
+If text = 3 Then
+Text5.text = "Flight Capacity of 20000 people per Hour."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command23.Caption = "GBM Airport" Then
+If Text2.text = "pl1" Then
+MsgBox "GBM AIRPORT                       Rent = Rs.260                         Purchase = Rs.1500"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command61.Visible = True
+Command23.FontBold = True
+Text1.text = Text1.text - 1500
+Command23.BackColor = &H8080FF
+Command23.Caption = "pl1 GBM Airport"
+List1.AddItem "Pl-1 GBM Airport Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command23.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command23.Caption = "pl1 GBM Airport" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 260
+Text1.text = Text1.text + 260
+End If
+Else
+End If
+End If
+If Command23.Caption = "GBM Airport" Then
+If Text2.text = "pl2" Then
+MsgBox "GBM AIRPORT                       Rent = Rs.260                         Purchase = Rs.1500"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command62.Visible = True
+Command23.FontBold = True
+Text3.text = Text3.text - 1500
+Command23.BackColor = &H80FF80
+Command23.Caption = "pl2 GBM Airport"
+List2.AddItem "Pl-2 GBM Airport Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command23.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command23.Caption = "pl2 GBM Airport" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 260
+Text3.text = Text3.text + 260
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+End Sub
+
+Private Sub Command24_Click()
+MsgBox "Which player"
+If Text2.text = "pl1" Then
+Dim comm, Low, High As Integer
+Low = 1
+High = 10
+Randomize
+comm = Int((High - Low + 1) * Rnd + Low)
+If comm = 1 Then
+MsgBox "You won a lottery worth Rs.300"
+Text1.text = Text1.text + 300
+Else
+End If
+If comm = 2 Then
+MsgBox "Pay to the doctor Rs.1000"
+Text1.text = Text1.text - 1000
+Else
+End If
+If comm = 3 Then
+MsgBox "Fix your house Rs.4000"
+Text1.text = Text1.text - 4000
+Else
+End If
+If comm = 4 Then
+MsgBox "Jackpot!!! Rs.500"
+Text1.text = Text1.text + 500
+Else
+End If
+If comm = 5 Then
+MsgBox "Bank gives you Rs.400"
+Text1.text = Text1.text + 400
+Else
+End If
+If comm = 6 Then
+MsgBox "Raise Rs.300"
+Text1.text = Text1.text + 300
+Else
+End If
+If comm = 7 Then
+MsgBox "Car Rental Rs.1500"
+Text1.text = Text1.text - 1500
+Else
+End If
+If comm = 8 Then
+MsgBox "Santa Gives You Christmas Gifts Worth Rs.1000"
+Text1.text = Text1.text + 1000
+Else
+End If
+If comm = 9 Then
+MsgBox "Pay your Bills Rs.2600"
+Text1.text = Text1.text - 2600
+Else
+End If
+If comm = 10 Then
+MsgBox "New Year Celebrations Worth Rs.500"
+Text1.text = Text1.text - 500
+Else
+End If
+Else
+End If
+If Text2.text = "pl2" Then
+Dim comm1, Low1, High1 As Integer
+Low1 = 1
+High1 = 10
+Randomize
+comm1 = Int((High1 - Low1 + 1) * Rnd + Low1)
+Print "    " & comm1
+If comm1 = 1 Then
+MsgBox "You won a lottery worth Rs.300"
+Text3.text = Text3.text + 300
+Else
+End If
+If comm1 = 2 Then
+MsgBox "Pay to the doctor Rs.1000"
+Text3.text = Text3.text - 1000
+Else
+End If
+If comm1 = 3 Then
+MsgBox "Fix your house Rs.4000"
+Text3.text = Text3.text - 4000
+Else
+End If
+If comm1 = 4 Then
+MsgBox "Jackpot!!! Rs.500"
+Text3.text = Text3.text + 500
+Else
+End If
+If comm1 = 5 Then
+MsgBox "Bank gives you Rs.400"
+Text3.text = Text3.text + 400
+Else
+End If
+If comm1 = 6 Then
+MsgBox "Raise Rs.300"
+Text3.text = Text3.text + 300
+Else
+End If
+If comm1 = 7 Then
+MsgBox "Car Rental Rs.1500"
+Text3.text = Text3.text - 1500
+Else
+End If
+If comm1 = 8 Then
+MsgBox "Santa Gives You Christmas Gifts Worth Rs.1000"
+Text3.text = Text3.text + 1000
+Else
+End If
+If comm1 = 9 Then
+MsgBox "Pay your Bills Rs.2600"
+Text3.text = Text3.text - 2600
+Else
+End If
+If comm1 = 10 Then
+MsgBox "New Year Celebrations Worth Rs.500"
+Text3.text = Text3.text - 500
+Else
+End If
+Else
+End If
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command24.Enabled = False
+End Sub
+
+Private Sub Command25_Click()
+On Error Resume Next
+Dim pl1 As String
+Dim pl2 As String
+Dim pl3 As String
+Dim pl4 As String
+If Text2.text = "" Then
+MsgBox "Please select a player(pl1/pl2)and then press the button"
+Else
+End If
+If Text2.text = "pl1" Then
+MsgBox "Moving      " & Text2.text
+Else
+End If
+If Text2.text = "pl2" Then
+MsgBox "Moving      " & Text2.text
+Else
+End If
+If Text2.text = "PL1" Or Text2.text = "PL2" Then
+MsgBox "Write in small letters"
+Else
+End If
+End Sub
+Private Sub Command26_Click()
+On Error Resume Next
+If Text4.text = "1" Then
+Dim loan As Double
+Let Text8.text = "20000"
+Let loan = Text8.text
+Dim simple, rate, Lowest3, Highest3 As Integer
+Low3 = 1
+High3 = 7
+Randomize
+Text99.text = ""
+Text1001.text = ""
+rate = Int((High3 - Low3 + 1) * Rnd + Low3)
+simple = loan * rate * 10 * 0.001
+Let Text99.text = simple
+Text1.text = Text1.text + loan
+Let Text1001 = rate
+Command26.Enabled = False
+Else
+MsgBox "Loan Rejected"
+End If
+End Sub
+Private Sub Command27_Click()
+On Error Resume Next
+Shape17.Visible = True
+Shape18.Visible = True
+Command1.Enabled = False
+Command1.Visible = False
+Command27.Enabled = True
+Command27.Visible = True
+If Text1.text < 0 Then
+MsgBox "Game Over", vbCritical
+End
+Else
+End If
+MsgBox "Get Your Paycheck Rs.1800"
+If Text4.text = "1" Then
+Text1.text = Text1.text + 1800
+If Command26.Enabled = False Then
+Text1.text = Text1.text - Text99.text
+Else
+End If
+If Command29.Enabled = False Then
+Text1.text = Text1.text - Text100.text
+Else
+End If
+Else
+End If
+If Text4.text = "2" Then
+Text3.text = Text3.text + 1800
+If Command30.Enabled = False Then
+Text3.text = Text3.text - Text101.text
+Else
+End If
+If Command31.Enabled = False Then
+Text3.text = Text3.text - Text102.text
+Else
+End If
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command28_Click()
+On Error Resume Next
+Dim score1, score2 As Integer
+score1 = Text1.text
+score2 = Text3.text
+If score1 > score2 Then
+MsgBox "Player 1 WON", vbExclamation
+Else
+End If
+If score1 < score2 Then
+MsgBox "Player 2 WON", vbExclamation
+Else
+End If
+If score1 = score2 Then
+MsgBox "No Wins or Losses", vbInformation
+Else
+End If
+End
+On Error Resume Next
+End Sub
+
+Private Sub Command29_Click()
+On Error Resume Next
+If Text4.text = "1" Then
+Dim loan As Double
+Let Text6.text = "5000"
+Let loan = Text6.text
+Dim simple, rate, Low3, High3 As Integer
+Low3 = 1
+High3 = 7
+Randomize
+Text100.text = ""
+Text1000.text = ""
+rate = Int((High3 - Low3 + 1) * Rnd + Low3)
+Text1.text = Text1.text + loan
+simple = loan * rate * 10 * 0.01
+Let Text1000 = rate
+Let Text100.text = simple
+Command29.Enabled = False
+Else
+MsgBox "Loan Rejected"
+End If
+Command29.Enabled = False
+On Error Resume Next
+End Sub
+
+Private Sub Command3_Click()
+Command1.Enabled = False
+Command2.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command1.Enabled = False
+On Error Resume Next
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "This is the commercial capital of INDIA."
+Else
+End If
+If text = 2 Then
+Text5.text = "Great Deal."
+Else
+End If
+If text = 3 Then
+Text5.text = "Commercially Important."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command3.Caption = "     Mumbai" Then
+If Text2.text = "pl1" Then
+MsgBox "MUMBAI                       Rent = Rs.100                         Purchase = Rs.1000"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command33.Visible = True
+List1.AddItem "Pl-1 Mumbai Bought "
+Text1.text = Text1.text - 1000
+Command3.BackColor = &H8080FF
+Command3.FontBold = True
+Command3.Caption = "pl1 Mumbai"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command3.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command3.Caption = "pl1 Mumbai" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 100
+Text1.text = Text1.text + 100
+End If
+Else
+End If
+End If
+If Command3.Caption = "     Mumbai" Then
+If Text2.text = "pl2" Then
+MsgBox "MUMBAI                       Rent = Rs.100                         Purchase = Rs.1000"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command34.Visible = True
+List2.AddItem "Pl-2 Mumbai Bought "
+Text3.text = Text3.text - 1000
+Command3.BackColor = &H80FF80
+Command3.FontBold = True
+Command3.Caption = "pl2 Mumbai"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command3.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command3.Caption = "pl2 Mumbai" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 100
+Text3.text = Text3.text + 100
+End If
+Else
+End If
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command30_Click()
+On Error Resume Next
+If Text4.text = "2" Then
+Dim loan As Double
+Let Text7.text = "5000"
+Let loan = Text7.text
+Dim simple, rate, Low3, High3 As Integer
+Low3 = 1
+High3 = 7
+Randomize
+Text101.text = ""
+Text202 = ""
+rate = Int((High3 - Low3 + 1) * Rnd + Low3)
+Let Text202 = rate
+Text3.text = Text3.text + loan
+simple = loan * rate * 10 * 0.01
+Let Text101.text = simple
+Command30.Enabled = False
+Else
+MsgBox "Loan Rejected"
+End If
+Command30.Enabled = False
+On Error Resume Next
+End Sub
+
+Private Sub Command31_Click()
+On Error Resume Next
+If Text4.text = "2" Then
+Dim loan As Double
+Let Text9.text = "20000"
+Let loan = Text9.text
+Dim simple, rate, Low3, High3 As Integer
+Low3 = 1
+High3 = 7
+Randomize
+Text102.text = ""
+Text203 = ""
+rate = Int((High3 - Low3 + 1) * Rnd + Low3)
+Text3.text = Text3.text + loan
+simple = loan * rate * 10 * 0.001
+Let Text203 = rate
+Let Text102.text = simple
+Command31.Enabled = False
+Else
+MsgBox "Loan Rejected"
+End If
+Command31.Enabled = False
+On Error Resume Next
+End Sub
+
+Private Sub Command32_Click()
+On Error Resume Next
+Load Form2
+Form2.Visible = True
+End Sub
+
+Private Sub Command33_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command67.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.500"
+Text1.text = Text1.text + 500
+Command3.Caption = "     Mumbai"
+Command3.FontBold = False
+Command33.Visible = False
+Else
+End If
+If d = 2 Or d = 3 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.100"
+Text1.text = Text1.text + 100
+Command3.Caption = "     Mumbai"
+Command3.FontBold = False
+Command33.Visible = False
+Else
+End If
+If d = 4 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.1500"
+Text1.text = Text1.text + 1500
+Command3.Caption = "     Mumbai"
+Command3.FontBold = False
+Command33.Visible = False
+Else
+End If
+List1.AddItem "Mumbai sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command34_Click()
+On Error Resume Next
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command68.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.500"
+Text3.text = Text3.text + 500
+Command3.Caption = "     Mumbai"
+Command3.FontBold = False
+Command34.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.1500"
+Text3.text = Text3.text + 1500
+Command3.Caption = "     Mumbai"
+Command3.FontBold = False
+Command34.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.100"
+Text3.text = Text3.text + 100
+Command3.Caption = "     Mumbai"
+Command3.FontBold = False
+Command34.Visible = False
+Else
+End If
+List2.AddItem "Mumbai sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command35_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command67.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.500"
+Text1.text = Text1.text + 500
+Command2.Caption = " New Delhi"
+Command2.FontBold = False
+Command35.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.1200"
+Text1.text = Text1.text + 1200
+Command2.Caption = " New Delhi"
+Command2.FontBold = False
+Command35.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.200"
+Text1.text = Text1.text + 200
+Command2.Caption = " New Delhi"
+Command2.FontBold = False
+Command35.Visible = False
+Else
+End If
+List1.AddItem "New Delhi Sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command36_Click()
+On Error Resume Next
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command68.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.500"
+Text3.text = Text3.text + 500
+Command2.Caption = " New Delhi"
+Command2.FontBold = False
+Command36.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.1200"
+Text3.text = Text3.text + 1200
+Command2.Caption = " New Delhi"
+Command2.FontBold = False
+Command36.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.200"
+Text3.text = Text3.text + 200
+Command2.Caption = " New Delhi"
+Command2.FontBold = False
+Command36.Visible = False
+Else
+End If
+List2.AddItem "New Delhi Sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command37_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command67.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.800"
+Text1.text = Text1.text + 800
+Command14.Caption = "ABM Airport"
+Command14.FontBold = False
+Command37.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.1600"
+Text1.text = Text1.text + 1600
+Command14.Caption = "ABM Airport"
+Command14.FontBold = False
+Command37.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.500"
+Text1.text = Text1.text + 500
+Command14.Caption = "ABM Airport"
+Command14.FontBold = False
+Command37.Visible = False
+Else
+End If
+List1.AddItem "ABM Airport sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command38_Click()
+On Error Resume Next
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command68.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.800"
+Text3.text = Text3.text + 800
+Command14.Caption = "ABM Airport"
+Command14.FontBold = False
+Command38.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.1600"
+Text3.text = Text3.text + 1600
+Command14.Caption = "ABM Airport"
+Command14.FontBold = False
+Command38.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.500"
+Text3.text = Text3.text + 500
+Command14.Caption = "ABM Airport"
+Command14.FontBold = False
+Command38.Visible = False
+Else
+End If
+List2.AddItem "ABM Airport sold"
+Else
+End If
+End Sub
+
+Private Sub Command39_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command67.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.180"
+Text1.text = Text1.text + 180
+Command16.Caption = " Hyderabad"
+Command16.FontBold = False
+Command39.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.280"
+Text1.text = Text1.text + 280
+Command16.Caption = " Hyderabad"
+Command16.FontBold = False
+Command39.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.80"
+Text1.text = Text1.text + 80
+Command16.Caption = " Hyderabad"
+Command16.FontBold = False
+Command39.Visible = False
+Else
+End If
+List1.AddItem "Hyderabad sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command4_Click()
+Command27.Enabled = False
+Command1.Enabled = False
+On Error Resume Next
+Text1.Locked = True
+Text5.text = "Will have to refill your car in order to move forward."
+MsgBox "PETROL PUMP                       PAY Rs.500 TO FILL YOUR CAR WITH GASOLINE"
+If Text2.text = "pl1" Then
+Text1.text = Text1.text - 500
+List1.AddItem "Pl-1 Petrol "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+End If
+If Text2.text = "pl2" Then
+Text3.text = Text3.text - 500
+List2.AddItem "Pl-2 Petrol"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command40_Click()
+On Error Resume Next
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command68.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.180"
+Text3.text = Text3.text + 180
+Command16.Caption = " Hyderabad"
+Command16.FontBold = False
+Command40.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.280"
+Text3.text = Text3.text + 280
+Command16.Caption = " Hyderabad"
+Command16.FontBold = False
+Command40.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.80"
+Text3.text = Text3.text + 80
+Command16.Caption = " Hyderabad"
+Command16.FontBold = False
+Command40.Visible = False
+Else
+End If
+List2.AddItem "Hyderabad sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command41_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command67.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.180"
+Text1.text = Text1.text + 180
+Command8.Caption = "       Kolkotta"
+Command8.FontBold = False
+Command41.Visible = False
+Else
+End If
+If d = 2 Or d = 3 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.50"
+Text1.text = Text1.text + 50
+Command8.Caption = "       Kolkotta"
+Command8.FontBold = False
+Command41.Visible = False
+Else
+End If
+If d = 4 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.250"
+Text1.text = Text1.text + 250
+Command8.Caption = "       Kolkotta"
+Command8.FontBold = False
+Command41.Visible = False
+Else
+End If
+List1.AddItem "Kolkotta sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command42_Click()
+On Error Resume Next
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command68.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.180"
+Text3.text = Text3.text + 180
+Command8.Caption = "       Kolkotta"
+Command8.FontBold = False
+Command42.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.250"
+Text3.text = Text3.text + 250
+Command8.Caption = "       Kolkotta"
+Command8.FontBold = False
+Command42.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.50"
+Text3.text = Text3.text + 50
+Command8.Caption = "       Kolkotta"
+Command8.FontBold = False
+Command42.Visible = False
+Else
+End If
+List2.AddItem "Kolkotta sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command43_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command67.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.360"
+Text1.text = Text1.text + 360
+Command9.Caption = "    Bangalore"
+Command9.FontBold = False
+Command43.Visible = False
+Else
+End If
+If d = 2 Or d = 3 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.160"
+Text1.text = Text1.text + 160
+Command9.Caption = "    Bangalore"
+Command9.FontBold = False
+Command43.Visible = False
+Else
+End If
+If d = 4 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.560"
+Text1.text = Text1.text + 560
+Command9.Caption = "    Bangalore"
+Command9.FontBold = False
+Command43.Visible = False
+Else
+End If
+List1.AddItem "Bangalore sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command44_Click()
+On Error Resume Next
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command68.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.360"
+Text3.text = Text3.text + 360
+Command9.Caption = "    Bangalore"
+Command9.FontBold = False
+Command44.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.560"
+Text3.text = Text3.text + 560
+Command9.Caption = "    Bangalore"
+Command9.FontBold = False
+Command44.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.160"
+Text3.text = Text3.text + 160
+Command9.Caption = "    Bangalore"
+Command9.FontBold = False
+Command44.Visible = False
+Else
+End If
+List2.AddItem "Bangalore sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command45_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.300"
+Text1.text = Text1.text + 300
+Command17.Caption = "I.G.I Airport"
+Command17.FontBold = False
+Command45.Visible = False
+List1.AddItem "I.G.I Airport sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command46_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.300"
+Text3.text = Text3.text + 300
+Command17.Caption = "I.G.I Airport"
+Command17.FontBold = False
+Command46.Visible = False
+List2.AddItem "I.G.I Airport sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command47_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.200"
+Text1.text = Text1.text + 200
+Command18.Caption = "           Nasik"
+Command18.FontBold = False
+Command47.Visible = False
+List1.AddItem "Nasik sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command48_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.200"
+Text3.text = Text3.text + 200
+Command18.Caption = "           Nasik"
+Command18.FontBold = False
+Command48.Visible = False
+List2.AddItem "Nasik sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command49_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.150"
+Text1.text = Text1.text + 150
+Command12.Caption = "    Chennai"
+Command12.FontBold = False
+Command49.Visible = False
+List1.AddItem "Chennai sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command5_Click()
+On Error Resume Next
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command2.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Important for business."
+Else
+End If
+If text = 2 Then
+Text5.text = "Great Deal."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command5.Caption = "           Pune" Then
+If Text2.text = "pl1" Then
+MsgBox "PUNE                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command65.Visible = True
+Command5.FontBold = True
+Text1.text = Text1.text - 300
+Command5.BackColor = &H8080FF
+Command5.Caption = "pl1 Pune"
+List1.AddItem "Pl-1 Pune Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command5.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command5.Caption = "pl1 Pune" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 50
+Text1.text = Text1.text + 50
+End If
+Else
+End If
+End If
+If Command5.Caption = "           Pune" Then
+If Text2.text = "pl2" Then
+MsgBox "PUNE                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command66.Visible = True
+Command5.FontBold = True
+Text3.text = Text3.text - 300
+Command5.BackColor = &H80FF80
+Command5.Caption = "pl2 Pune"
+List2.AddItem "Pl-2 Pune Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command5.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command5.Caption = "pl2 Pune" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 50
+Text3.text = Text3.text + 50
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command50_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.150"
+Text3.text = Text3.text + 150
+Command12.Caption = "    Chennai"
+Command12.FontBold = False
+Command50.Visible = False
+List2.AddItem "Chennai sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command51_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.500"
+Text1.text = Text1.text + 500
+Command19.Caption = "    Srinagar"
+Command19.FontBold = False
+Command51.Visible = False
+List1.AddItem "Srinagar sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command52_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.500"
+Text3.text = Text3.text + 500
+Command19.Caption = "    Srinagar"
+Command19.FontBold = False
+Command52.Visible = False
+List2.AddItem "Srinagar sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command53_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.300"
+Text1.text = Text1.text + 300
+Command20.Caption = "International Airport"
+Command20.FontBold = False
+Command53.Visible = False
+List1.AddItem "International Airport sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command54_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.300"
+Text3.text = Text3.text + 300
+Command20.Caption = "International Airport"
+Command20.FontBold = False
+Command54.Visible = False
+List2.AddItem "International Airport sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command55_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.150"
+Text1.text = Text1.text + 150
+Command21.Caption = "          Agra"
+Command21.FontBold = False
+Command55.Visible = False
+List1.AddItem "Agra sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command56_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.150"
+Text3.text = Text3.text + 150
+Command21.Caption = "          Agra"
+Command21.FontBold = False
+Command56.Visible = False
+List2.AddItem "Agra sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command57_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.70"
+Text1.text = Text1.text + 70
+Command11.Caption = "Water Works"
+Command11.FontBold = False
+Command57.Visible = False
+List1.AddItem "Water Works sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command58_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.70"
+Text3.text = Text3.text + 70
+Command11.Caption = "Water Works"
+Command11.FontBold = False
+Command58.Visible = False
+List2.AddItem "Water Works sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command59_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.100"
+Text1.text = Text1.text + 100
+Command22.Caption = "  Ahmedabad"
+Command22.FontBold = False
+Command59.Visible = False
+List1.AddItem "Ahmedabad sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command6_Click()
+On Error Resume Next
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command2.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Termed as the CITY BEAUTIFUL."
+Else
+End If
+If text = 2 Then
+Text5.text = "Great Deal."
+Else
+End If
+If text = 3 Then
+Text5.text = "A correct blend of technology and nature."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command6.Caption = "  Chandigarh" Then
+If Text2.text = "pl1" Then
+MsgBox "CHANDIGARH                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command63.Visible = True
+Command6.FontBold = True
+Text1.text = Text1.text - 300
+Command6.BackColor = &H8080FF
+Command6.Caption = "pl1 Chandigarh"
+List1.AddItem "Pl-1 Chandigarh Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command6.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command6.Caption = "pl1 Chandigarh" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 50
+Text1.text = Text1.text + 50
+End If
+Else
+End If
+End If
+If Command6.Caption = "  Chandigarh" Then
+If Text2.text = "pl2" Then
+MsgBox "CHANDIGARH                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command64.Visible = True
+Command6.FontBold = True
+Text3.text = Text3.text - 300
+Command6.BackColor = &H80FF80
+Command6.Caption = "pl2 Chandigarh"
+List2.AddItem "Pl-2 Chandigarh Bought"
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command6.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command6.Caption = "pl2 Chandigarh" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 50
+Text3.text = Text3.text + 50
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command60_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.100"
+Text3.text = Text3.text + 100
+Command22.Caption = "  Ahmedabad"
+Command22.FontBold = False
+Command60.Visible = False
+List2.AddItem "Ahmedabad sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command61_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command67.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.800"
+Text1.text = Text1.text + 800
+Command23.Caption = "GBM Airport"
+Command23.FontBold = False
+Command61.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.1600"
+Text1.text = Text1.text + 1600
+Command23.Caption = "GBM Airport"
+Command23.FontBold = False
+Command61.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.500"
+Text1.text = Text1.text + 500
+Command23.Caption = "GBM Airport"
+Command23.FontBold = False
+Command61.Visible = False
+Else
+End If
+List1.AddItem "GBM Airport sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command62_Click()
+On Error Resume Next
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command68.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.800"
+Text3.text = Text3.text + 800
+Command23.Caption = "GBM Airport"
+Command23.FontBold = False
+Command62.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.1600"
+Text3.text = Text3.text + 1600
+Command23.Caption = "GBM Airport"
+Command23.FontBold = False
+Command62.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.500"
+Text3.text = Text3.text + 500
+Command23.Caption = "GBM Airport"
+Command23.FontBold = False
+Command62.Visible = False
+Else
+End If
+List2.AddItem "GBM Airport sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command63_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+If Command67.FontBold = True Then
+MsgBox "Sold Card for Rs.200"
+Text1.text = Text1.text + 200
+Command6.Caption = "  Chandigarh"
+Command6.FontBold = False
+Command63.Visible = False
+List1.AddItem "Chandigarh sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command64_Click()
+On Error Resume Next
+If Command68.FontBold = True Then
+MsgBox "Sold Card for Rs.200"
+Text3.text = Text3.text + 200
+Command6.Caption = "  Chandigarh"
+Command6.FontBold = False
+Command64.Visible = False
+List2.AddItem "Chandigarh sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command65_Click()
+On Error Resume Next
+If Text2.text = "pl1" And Text4.text = "1" Then
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command67.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.200"
+Text1.text = Text1.text + 200
+Command5.Caption = "           Pune"
+Command5.FontBold = False
+Command65.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.300"
+Text1.text = Text1.text + 300
+Command5.Caption = "           Pune"
+Command5.FontBold = False
+Command65.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.90"
+Text1.text = Text1.text + 90
+Command5.Caption = "           Pune"
+Command5.FontBold = False
+Command65.Visible = False
+Else
+End If
+List1.AddItem "Pune sold"
+Else
+End If
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command66_Click()
+On Error Resume Next
+Dim d, Low, High As Integer
+Low = 1
+High = 4
+Randomize
+d = Int((High - Low + 1) * Rnd + Low)
+If Command68.FontBold = True Then
+If d = 1 Then
+MsgBox "Property Values Average"
+MsgBox "Sold Card for Rs.200"
+Text3.text = Text3.text + 200
+Command5.Caption = "           Pune"
+Command5.FontBold = False
+Command66.Visible = False
+Else
+End If
+If d = 2 Then
+MsgBox "Property Values High"
+MsgBox "Sold Card for Rs.300"
+Text3.text = Text3.text + 300
+Command5.Caption = "           Pune"
+Command5.FontBold = False
+Command66.Visible = False
+Else
+End If
+If d = 3 Or d = 4 Then
+MsgBox "Property Values Low"
+MsgBox "Sold Card for Rs.80"
+Text3.text = Text3.text + 80
+Command5.Caption = "           Pune"
+Command5.FontBold = False
+Command66.Visible = False
+Else
+End If
+List2.AddItem "Pune sold"
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command67_Click()
+On Error Resume Next
+
+Command67.FontBold = True
+End Sub
+
+Private Sub Command68_Click()
+On Error Resume Next
+If Text2.text = "pl2" And Text4.text = "2" Then
+Command68.FontBold = True
+Else
+MsgBox "Invalid move", vbCritical, "Invalid"
+End If
+End Sub
+
+Private Sub Command7_Click()
+On Error Resume Next
+Text1.Locked = True
+Text5.text = "Anything for free will always attract Crowds."
+If Text2.text = "pl1" Then
+MsgBox "Free Parking - Get Rs.100"
+Text1.text = Text1.text + 100
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+End If
+If Text2.text = "pl2" Then
+MsgBox "Free Parking - Get Rs.100"
+Text3.text = Text3.text + 100
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command70_Click()
+if
+End Sub
+
+Private Sub Command8_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command2.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command1.Enabled = False
+On Error Resume Next
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 2
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "Good for Trade."
+Else
+End If
+If text = 2 Then
+Text5.text = "Good Deal."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command8.Caption = "       Kolkotta" Then
+If Text2.text = "pl1" Then
+MsgBox "KOLKOTTA                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command41.Visible = True
+Text1.text = Text1.text - 300
+Command8.BackColor = &H8080FF
+Command8.FontBold = True
+Command8.Caption = "pl1 Kolkotta"
+List1.AddItem "Pl-1 Kolkotta Bought   "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command8.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command8.Caption = "pl1 Kolkotta" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 50
+Text1.text = Text1.text + 50
+End If
+Else
+End If
+End If
+If Command8.Caption = "       Kolkotta" Then
+If Text2.text = "pl2" Then
+MsgBox "KOLKOTTA                       Rent = Rs.50                         Purchase = Rs.300"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command42.Visible = True
+Text3.text = Text3.text - 300
+Command8.BackColor = &H80FF80
+Command8.FontBold = True
+Command8.Caption = "pl2 Kolkotta"
+List2.AddItem "Pl-2 Kolkotta Bought "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command8.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command8.Caption = "pl2 Kolkotta" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 50
+Text3.text = Text3.text + 50
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Command9_Click()
+Command1.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command2.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Command27.Enabled = False
+Command1.Enabled = False
+Command27.Enabled = False
+On Error Resume Next
+Text1.Locked = True
+Dim text, Lowest3, Highest3 As Integer
+Lowest3 = 1
+Highest3 = 3
+Randomize
+text = Int((Highest3 - Lowest3 + 1) * Rnd + Lowest3)
+If text = 1 Then
+Text5.text = "This is the Silicon Valley of INDIA."
+Else
+End If
+If text = 2 Then
+Text5.text = "Great Deal."
+Else
+End If
+If text = 3 Then
+Text5.text = "Must Invest."
+Else
+End If
+Dim IMAGE, Lowest2, Highest2 As Integer
+Dim i As Integer
+Lowest2 = 1
+Highest2 = 6
+Randomize
+IMAGE = Int((Highest2 - Lowest2 + 1) * Rnd + Lowest2)
+If IMAGE = 1 Then
+Image4.Visible = True
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 2 Then
+Image4.Visible = False
+Image5.Visible = True
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 3 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = True
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If IMAGE = 4 Then
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = True
+Image8.Visible = False
+Image9.Visible = False
+Else
+End If
+If Command9.Caption = "    Bangalore" Then
+If Text2.text = "pl1" Then
+MsgBox "BANGALORE                       Rent = Rs.60                         Purchase = Rs.700"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command43.Visible = True
+Text1.text = Text1.text - 700
+Command9.BackColor = &H8080FF
+Command9.FontBold = True
+Command9.Caption = "pl1 Bangalore"
+List1.AddItem "Pl-1 Bangalore Bought "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command9.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command9.Caption = "pl1 Bangalore" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "1" Then
+MsgBox "Welcome to your City Pl-1 "
+Else
+MsgBox "Pay the rent    " & Text4.text
+Text3.text = Text3.text - 60
+Text1.text = Text1.text + 60
+End If
+Else
+End If
+End If
+If Command9.Caption = "    Bangalore" Then
+If Text2.text = "pl2" Then
+MsgBox "BANGALORE                       Rent = Rs.60                         Purchase = Rs.700"
+Text90.Visible = True
+Text90.Enabled = True
+Label3.Visible = True
+If Text90.text = "y" Then
+Command44.Visible = True
+Text3.text = Text3.text - 700
+Command9.BackColor = &H80FF80
+Command9.FontBold = True
+Command9.Caption = "pl2 Bangalore"
+List2.AddItem "Pl-2 Bangalore Bought "
+Text90.Visible = False
+Text90.Enabled = False
+Label3.Visible = False
+Text90.text = ""
+Else
+Text90.text = ""
+Command9.BackColor = &H8000000F
+End If
+Else
+End If
+Else
+If Command9.Caption = "pl2 Bangalore" Then
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+MsgBox "Enter your Player number in the text box"
+If Text4.text = "2" Then
+MsgBox "Welcome to your City Pl-2 "
+Else
+MsgBox "Pay the rent    "
+Text1.text = Text1.text - 60
+Text3.text = Text3.text + 60
+End If
+Else
+End If
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Form_Load()
+On Error Resume Next
+Timer1.Interval = 800
+Command35.Visible = False
+Command36.Visible = False
+Command33.Visible = False
+Command34.Visible = False
+Command37.Visible = False
+Command38.Visible = False
+Command39.Visible = False
+Command40.Visible = False
+Command41.Visible = False
+Command42.Visible = False
+Command43.Visible = False
+Command44.Visible = False
+Command45.Visible = False
+Command46.Visible = False
+Command47.Visible = False
+Command48.Visible = False
+Command49.Visible = False
+Command50.Visible = False
+Command51.Visible = False
+Command52.Visible = False
+Command53.Visible = False
+Command54.Visible = False
+Command55.Visible = False
+Command56.Visible = False
+Command57.Visible = False
+Command58.Visible = False
+Command59.Visible = False
+Command60.Visible = False
+Command61.Visible = False
+Command62.Visible = False
+Command63.Visible = False
+Command64.Visible = False
+Command65.Visible = False
+Command66.Visible = False
+Command27.Visible = False
+Command27.Enabled = False
+Image4.Visible = False
+Image5.Visible = False
+Image6.Visible = False
+Image7.Visible = False
+Image8.Visible = False
+Image9.Visible = True
+Dim pl1 As String
+Dim pl2 As String
+Label3.Visible = False
+Text90.Visible = False
+Text90.Enabled = False
+Text1.Locked = True
+Text23.Locked = True
+Text3.Locked = True
+Command1.Enabled = True
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Image3.Enabled = False
+Image10.Enabled = False
+Text4.Locked = False
+Text4.Visible = True
+Label10.Visible = True
+Dim name1, name2 As String
+name1 = InputBox("Player 1 Enter your Name Below:")
+Label8.Caption = name1
+name2 = InputBox("Player 2 Enter your name Below:")
+Label9.Caption = name2
+On Error Resume Next
+End Sub
+
+Private Sub Option1_Click()
+
+End Sub
+
+Private Sub Image1_Click()
+On Error Resume Next
+If Text1 < 0 Or Text3 < 0 Then
+If Text1 < 0 And Text4.text = "1" Then
+MsgBox "Cannot Buy,Player 1 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+If Text3 < 0 And Text4.text = "2" Then
+MsgBox "Cannot Buy,Player 2 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+Else
+End If
+If Text1 > 0 And Text3 > 0 Then
+Command25.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Image10_Click()
+On Error Resume Next
+MsgBox "Hi ,I am Lochness and I will Provide you with some meaningfull information regarding your DEALS", vbApplicationModal
+If Text1 < 0 Or Text3 < 0 Then
+If Text1 < 0 And Text4.text = "1" Then
+MsgBox "Cannot Buy,Player 1 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+If Text3 < 0 And Text4.text = "2" Then
+MsgBox "Cannot Buy,Player 2 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+Else
+End If
+If Text1 > 0 And Text3 > 0 Then
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Image2_Click()
+On Error Resume Next
+If Text1 < 0 Or Text3 < 0 Then
+If Text1 < 0 And Text4.text = "1" Then
+MsgBox "Cannot Buy,Player 1 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+If Text3 < 0 And Text4.text = "2" Then
+MsgBox "Cannot Buy,Player 2 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+Else
+End If
+If Text1 > 0 And Text3 > 0 Then
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Image3_Click()
+On Error Resume Next
+If Text1 < 0 Or Text3 < 0 Then
+If Text1 < 0 And Text4.text = "1" Then
+MsgBox "Cannot Buy,Player 1 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+If Text3 < 0 And Text4.text = "2" Then
+MsgBox "Cannot Buy,Player 2 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+Else
+End If
+If Text1 > 0 And Text3 > 0 Then
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub Image3_DblClick()
+On Error Resume Next
+MsgBox "Hi Folks,It's me - Aman moudgil(Geek Mithu)"
+End Sub
+
+Private Sub List1_Click()
+On Error Resume Next
+If Text1 < 0 Or Text3 < 0 Then
+If Text1 < 0 And Text4.text = "1" Then
+MsgBox "Cannot Buy,Player 1 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+If Text3 < 0 And Text4.text = "2" Then
+MsgBox "Cannot Buy,Player 2 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+Else
+End If
+If Text1 > 0 And Text3 > 0 Then
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+Else
+End If
+On Error Resume Next
+End Sub
+
+Private Sub List2_Click()
+On Error Resume Next
+If Text1 < 0 Or Text3 < 0 Then
+If Text1 < 0 And Text4.text = "1" Then
+MsgBox "Cannot Buy,Player 1 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+If Text3 < 0 And Text4.text = "2" Then
+MsgBox "Cannot Buy,Player 2 please take a loan"
+Command1.Enabled = False
+Command2.Enabled = False
+Command3.Enabled = False
+Command4.Enabled = False
+Command5.Enabled = False
+Command6.Enabled = False
+Command7.Enabled = False
+Command8.Enabled = False
+Command9.Enabled = False
+Command10.Enabled = False
+Command11.Enabled = False
+Command12.Enabled = False
+Command13.Enabled = False
+Command14.Enabled = False
+Command15.Enabled = False
+Command16.Enabled = False
+Command17.Enabled = False
+Command18.Enabled = False
+Command19.Enabled = False
+Command20.Enabled = False
+Command21.Enabled = False
+Command22.Enabled = False
+Command23.Enabled = False
+Command24.Enabled = False
+Command25.Enabled = False
+Command27.Enabled = False
+Else
+End If
+Else
+End If
+If Text1 > 0 And Text3 > 0 Then
+Command25.Enabled = True
+Command1.Enabled = True
+Command2.Enabled = True
+Command3.Enabled = True
+Command4.Enabled = True
+Command5.Enabled = True
+Command6.Enabled = True
+Command7.Enabled = True
+Command8.Enabled = True
+Command9.Enabled = True
+Command10.Enabled = True
+Command11.Enabled = True
+Command12.Enabled = True
+Command13.Enabled = True
+Command14.Enabled = True
+Command15.Enabled = True
+Command16.Enabled = True
+Command17.Enabled = True
+Command18.Enabled = True
+Command19.Enabled = True
+Command20.Enabled = True
+Command21.Enabled = True
+Command22.Enabled = True
+Command23.Enabled = True
+Command25.Enabled = True
+Command27.Enabled = True
+Else
+End If
+On Error Resume Next
+End Sub
+
+
+
+Private Sub Timer1_Timer()
+On Error Resume Next
+Dim mark, d, e As Integer
+d = 1
+e = 3
+Randomize
+mark = Int((e - d + 1) * Rnd + e)
+If mark = 1 Then
+Dim market, a, b As Integer
+a = 1
+b = 7
+Randomize
+market = Int((b - a + 1) * Rnd + a)
+Let Text10.text = ""
+If market = 1 Then
+Text10.ForeColor = (&HFF00&)
+Text10.text = "ABM  +29.60"
+Else
+End If
+If market = 2 Then
+Text10.ForeColor = (&HFF00&)
+Text10.text = "GBM  +09.60"
+Else
+End If
+If market = 3 Then
+Text10.ForeColor = &HFF&
+Text10.text = "Mbase -6.01"
+Else
+End If
+If market = 4 Then
+Text10.ForeColor = &HFF&
+Text10.text = "CorOda -6.01"
+Else
+End If
+If market = 5 Then
+Text10.ForeColor = (&HFF00&)
+Text10.text = "A++ Interactive  +49.60"
+Else
+End If
+If market = 6 Then
+Text10.ForeColor = &HFF&
+Text10.text = "B-- -6.01"
+Else
+End If
+If market = 7 Then
+Text10.ForeColor = &HFF&
+Text10.text = "SJ Pvt. Ltd -6.01"
+Else
+End If
+Else
+End If
+If mark = 2 Then
+Text10.text = "No Information Currently Available"
+Else
+End If
+If mark = 3 Then
+Dim m, R, L As Integer
+R = 1
+L = 9
+Randomize
+m = Int((L - R + 1) * Rnd + R)
+If m = 1 Then
+Text10.ForeColor = (&HFF00&)
+Text10.text = "Steel++  +29.60"
+Else
+End If
+If m = 2 Then
+Text10.ForeColor = (&HFF00&)
+Text10.text = "Gomber++  +09.60"
+Else
+End If
+If m = 3 Then
+Text10.ForeColor = &HFF&
+Text10.text = "Mdase -6.01"
+Else
+End If
+If m = 4 Then
+Text10.ForeColor = &HFF&
+Text10.text = "Coya -6.01"
+Else
+End If
+If m = 5 Then
+Text10.ForeColor = (&HFF00&)
+Text10.text = "A++ Interactive  +49.60"
+Else
+End If
+If m = 6 Then
+Text10.ForeColor = &HFF&
+Text10.text = "tuyusa -6.01"
+Else
+End If
+If m = 7 Then
+Text10.ForeColor = &HFF&
+Text10.text = "RMLWX Pvt. Ltd -6.01"
+Else
+End If
+If m = 8 Then
+Text10.ForeColor = &HFF&
+Text10.text = " RM Lal and Sons. Pvt. Ltd. -0.09"
+Else
+End If
+If m = 9 Then
+Text10.ForeColor = (&HFF00&)
+Text10.text = " DM construction Pvt. Ltd. +100.05"
+Else
+End If
+Else
+End If
+On Error Resume Next
+End Sub
